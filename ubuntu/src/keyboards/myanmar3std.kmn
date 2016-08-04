@@ -1,7 +1,7 @@
 VERSION 6.0
 NAME "Myanmar3std"
 
-BITMAP myan3
+BITMAP myan3.bmp
 
 begin Unicode > use(Main)
 
