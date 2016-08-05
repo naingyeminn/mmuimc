@@ -1,6 +1,7 @@
 install:
-	wget http://packages.sil.org/sil-repository.deb -O sil-repository.deb
-	dpkg -i sil-repository.deb
+	wget http://packages.sil.org/sil.gpg
+	apt-key add sil.gpg
+	apt-add-repository "deb http://packages.sil.org/ubuntu/ $(lsb_release -sc) main"
 	apt-get update
 	apt-get install -y ibus-kmfl
 	cp -fv ./src/keyboards/*.kmn /usr/share/kmfl
@@ -10,6 +11,6 @@ uninstall:
 	rm -fv /usr/share/kmfl/*.kmn
 	rm -fv /usr/share/kmfl/icons/*.bmp
 	apt-get purge -y ibus-kmfl
-	apt-get purge -y sil-repository
+	apt-add-repository --remove "deb http://packages.sil.org/ubuntu/ $(lsb_release -sc) main"
 
 .PHONY: install uninstall
