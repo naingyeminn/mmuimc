@@ -3,18 +3,18 @@
 ##Installation
 
 ```sh
-$ sh ./mmuimc install
+$ make install
 ```
 
 ##Uninstallation
 
 ```sh
-$ sh ./mmuimc uninstall
+$ make uninstall
 ```
 
 ##Supported Languages
 
 - Burmese (Myanmar3 Standard Layout and MyWin Layout)
+- Shan
 - Pa-Oh
 - SgawKaren
-- Shan
