@@ -3,9 +3,13 @@
 ##Installation
 
 ```sh
-$ sudo make install
-$ ibus-daemon -rdx
-$ im-config -n ibus
+$ sh ./mmuimc install
+```
+
+##Uninstallation
+
+```sh
+$ sh ./mmuimc uninstall
 ```
 
 ##Supported Languages
@@ -13,3 +17,4 @@ $ im-config -n ibus
 - Burmese (Myanmar3 Standard Layout and MyWin Layout)
 - Pa-Oh
 - SgawKaren
+- Shan
